@@ -19,7 +19,7 @@ public class Main {
                 45
         };
 
-        int[] numb = new int[5];
+        int[] numb = new int[products.length];
 
         System.out.println("Список возможных товаров для покупки: ");
         for (int i = 0; i < products.length; i++) {
@@ -51,7 +51,7 @@ public class Main {
                 continue;
             }
 
-            if (numProduct < 0 || numProduct > products.length) {
+            if (numProduct < 0 || numProduct >= products.length) {
                 System.out.println("Некорректный ввод позиции! Нужно выбрать номер позиции из списка!");
                 continue;
             }
