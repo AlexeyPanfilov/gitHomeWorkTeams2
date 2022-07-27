@@ -51,7 +51,7 @@ public class Main {
                 continue;
             }
 
-            if (numProduct < 0 || numProduct > products.length) {
+            if (numProduct < 0 || numProduct >= products.length) {
                 System.out.println("Некорректный ввод позиции! Нужно выбрать номер позиции из списка!");
                 continue;
             }
